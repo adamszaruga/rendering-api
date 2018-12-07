@@ -22,7 +22,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 // GET /api/circles
-
+app.get('/api/circles', function(req, res, next){
+    res.json(circles);
+})
 
 // GET /api/movies
 
